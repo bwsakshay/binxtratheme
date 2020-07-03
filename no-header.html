@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+
+<body class='no-header-page  wsite-theme-dark'>
+    <div id="header-wrap">
+		<div class="outer-container">
+        <div class="container">
+            <table id="header">
+                <tr>
+					<td class="phone-number">{phone:text}</td>
+					<td id="header-right">
+                        <table>
+                            <tr>
+								<td class="social">{social}</td>
+								<td class="search">{search}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div><!-- end container -->
+		</div>
+    </div><!-- end header-wrap --> 
+
+    <div id="nav-wrap">
+		<div class="nav-inner-wrap">
+		<div class="outer-container">
+        <div class="container">
+			<table>
+				<tr>
+					<td id="logo">{logo}</td>
+					<td id="menu">{menu}</td>
+				</tr>
+			</table>
+        </div><!-- end container -->
+		</div>
+		</div>
+    </div><!-- end nav-wrap -->
+
+    <div id="banner-wrap">
+		<div class="outer-container">
+        <div class="container">
+            <div id="banner">
+            
+                <div style="clear:both;"></div>
+				
+            </div><!-- end banner -->
+        </div><!-- end container -->
+		</div>
+    </div><!-- end banner-wrap -->
+	
+    <div id="main-wrap">
+		<div class="outer-container">
+        <div class="container">
+   			{content}
+        </div><!-- end container -->
+		</div>
+    </div><!-- end main-wrap -->
+
+    <div id="footer-wrap">
+		<div id="footer-wrap-bg">
+		<div class="outer-container">
+        <div class="container">
+       		{footer}
+        </div><!-- end container -->
+		</div>
+		</div>
+    </div><!-- end footer-wrap -->
+<script type="text/JavaScript">
+//Script courtesy of BoogieJack.com
+var message="NoRightClicking";
+function defeatIE() {if (document.all) {(message);return false;}}
+function defeatNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
+else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
+document.oncontextmenu=new Function("return false")
+</script>
+</body>
+
+</html>
